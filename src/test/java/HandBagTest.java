@@ -9,6 +9,8 @@
 
 import org.junit.*;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 
@@ -43,6 +45,7 @@ public class HandBagTest {
         b.addItem("Eggs");
         assertEquals("Eggs", b.popItem());
         assertEquals(1, b.getNumberOfContents());
+
     }
 
     @Test(timeout = 50)
